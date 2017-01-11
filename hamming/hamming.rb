@@ -1,21 +1,21 @@
 class Hamming
 	def self.test_DNA_length
- 	   	if(@@d1.to_s.length == @@d2.to_s.length)
+ 	   	if(@@string1.to_s.length == @@string2.to_s.length)
  	     		return true
  	   	else
  		     	return false
  	   	end
  	end
 
- 	def self.compute(d1,d2)
-	    @@d1=d1
-	    @@d2=d2
+ 	def self.compute(string1,string2)
+	    @@string1=string1
+	    @@string2=string2
 	    @c=0;
 	    if test_DNA_length
-	      @cd1=@@d1.split("")
-	      @cd2=@@d2.split("")
-	      (0..@cd1.length).each do |i|
-		 if @cd1[i] != @cd2[i]
+	      @cstring1=@@string1.split("")
+	      @cstring2=@@string2.split("")
+	      (0..@cstring1.length).each do |i|
+		 if @cstring1[i] != @cstring2[i]
 		   @c += 1;
 		 end
 	      end
