@@ -1,5 +1,8 @@
 class Gigasecond
 	def self.from(t)
-	 	t+10000000000
+	 	t+1000000000
 	end
+end
+module BookKeeping
+	VERSION=5
 end
