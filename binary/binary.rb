@@ -5,7 +5,7 @@ class Binary
       sum = 0
       i = 0
       while binary_string_number != 0
-        digit=binary_string_number % 10
+        digit = binary_string_number % 10
         if(digit != 0)
           sum += (digit * (2 ** i)).to_i
         end
